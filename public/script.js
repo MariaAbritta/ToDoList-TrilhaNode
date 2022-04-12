@@ -1,1 +1,0 @@
-alert("Seja bem-vindo(a) ao meu projeto de To Do List com Nodejs! :)");
