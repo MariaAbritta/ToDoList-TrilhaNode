@@ -1,4 +1,5 @@
 //Requires
+require('dotenv').config()
 const express = require('express');
 const path = require("path");
 const routes = require('./routes/routes');
@@ -9,7 +10,7 @@ connectToDb();
 
 //Constantes
 const app = express();
-const port = 3000;
+const port = process.env.PORT;
 
 //App
 app.set("view engine", "ejs");
@@ -18,5 +19,5 @@ app.use(express.urlencoded());
 app.use(routes);
 
 app.listen(port, () => {
-   console.log((`Servidor rodando em http://localhost:${3000}`)) 
+   console.log((`Servidor rodando em http://localhost:${port}`)) 
 });
