@@ -19,10 +19,11 @@ Clone e instale:
   - E por fim, instale as dependencias do projeto com o comando:
     ```bash
         sudo npm install
+    ```
 No seu editor de código, certigique de instalar:
   - express 
 
-        ` npm install express`
+       `npm install express`
     
    - ejs
     
