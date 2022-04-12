@@ -9,7 +9,14 @@
     <title>To Do List da Abritta</title>
 </head>
 <body>
-    
+
+    <% if (message != "") {%>
+        <section class="message message-<%= type %>" >
+            <p><%= message %></p>
+            <span id="close-message" href="/"><i class="bi bi-x-lg"></i></span>
+        </section>
+   <% } %>
+
     <header>
         <% if (task == null) { %>
         <h1>To Do List</h1>
@@ -18,7 +25,7 @@
             <button id="addButton" type="submit">Adicionar</button>
         </form>
         <% } else { %>
-        <h1>To Do List/h1>
+        <h1>Editar tarefas</h1>
         <form action="/updateOne/<%= task._id %>" method="post">
             <input type="text" name="task" id="task" value="<%= task.task %>">
             <button id="updateButton" type="submit">Atualizar</button>
@@ -29,7 +36,7 @@
 
    <section id="tasks">
         <ul>
-            <% taskList.forEach((task) => { %>
+            <%taskList.forEach((task) => { %>
                 <li>
                     <div>
                          <a href="/"><%= task.task %></a>
