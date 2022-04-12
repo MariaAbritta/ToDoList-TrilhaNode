@@ -1,0 +1,22 @@
+{
+  "name": "todolist-trilhanode",
+  "version": "1.0.0",
+  "description": "Projeto da trilha de capacitacao da Orc'estra",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MariaAbritta/ToDoList-TrilhaNode.git"
+  },
+  "author": "Maria Abritta",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MariaAbritta/ToDoList-TrilhaNode/issues"
+  },
+  "homepage": "https://github.com/MariaAbritta/ToDoList-TrilhaNode#readme",
+  "dependencies": {
+    "express": "^4.17.3"
+  }
+}
