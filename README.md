@@ -63,5 +63,5 @@ Com tudo isso instalado corretamente na sua aplicação, rode no terminal:
     4. RF04: Ao excluir uma lista de tarefas, tarefas relacionadas a ela devem ser excluídas e tarefas que não são relacionadas a ela devem permanecer.
         - Da para visualizar isso perfeitamente no front, quando você confirma que quer deletar uma tarefa, apenas a selecionada é deletada.
     5. RF05: Um usuário deve ser capaz de visualizar todas as listas cadastradas, com a rota /lista/all e o método GET.
-        - Da para visualizar isso perfeitamente no front, quando você abre a aplicação(o link), para um melhor style, decidir colocar essa rota no início, assim a pessoa consegue visualizar todas as tarefas adicionadas. Para uma maior personalização do meu código, mudei o nome da rota para /.
+        - Da para visualizar isso perfeitamente no front, quando você abre a aplicação(o link), para um melhor style, decidi colocar essa rota no início, assim a pessoa consegue visualizar todas as tarefas adicionadas. Para uma maior personalização do meu código, mudei o nome da rota para /.
        `routes.get("/", TaskController.getAllTasks);`
